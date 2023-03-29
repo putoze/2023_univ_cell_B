@@ -34,6 +34,8 @@ reg [39:0] max_c2_dirty,tmp_c2_dirty ;
 reg [6:0]  opt_c1_obj_num,opt_c2_obj_num;
 reg [6:0]  tmp_obj_num;
 reg [7:0]  circal_loc_C1,circal_loc_C2;
+reg[39:0] or_result;
+reg[5:0] opt_c2_obj_num_wr;
 
 wire read_done_f =  state_RD_data&& scan_valid_cnt == 'd39;
 wire scan_c1_done_f = state_SCAN_C1 && scan_valid_cnt == 'd39;
@@ -54,7 +56,7 @@ wire state_out 				  = curr_state == OUT;
 wire [3:0] cur_pos_X = obj_mem[scan_valid_cnt][3:0];
 wire [3:0] cur_pos_Y = obj_mem[scan_valid_cnt][7:4];
 //operator 
-wire [9:0] dis = ($signed(row_ptr) - $signed(cur_pos_Y)) ** 2 + ($signed(col_ptr) - $signed(cur_pos_X)) ** 2;
+wire [9:0] dis = ($signed(row_ptr-cur_pos_Y)) ** 2 + ($signed(col_ptr-cur_pos_X)) ** 2;
 //flag
 wire dis_lr_16_f = dis <= 16;
 //================================================================
@@ -257,8 +259,7 @@ always @(posedge CLK or posedge RST) begin
 end
 
 
-reg[39:0] or_result;
-reg[5:0] opt_c2_obj_num_wr;
+
 
 always@(*)
 begin
@@ -272,5 +273,3 @@ end
 
 
 endmodule
-
-
