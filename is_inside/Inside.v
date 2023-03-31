@@ -1,31 +1,5 @@
-//Report2
-module Inside (
-input [3:0] x,
-input [3:0] y,
-input [3:0] circle_x,
-input [3:0] circle_y,
-output reg is_inside // 1: is inside, 0: is outside
-);
-
-wire signed [4:0] dis_x = circle_x - x;
-wire signed [4:0] dis_y = circle_y - y;
-
-wire [9:0] dis =  dis_x^2 + dis_y^2;
-
-always @(*) begin 
-	if (dis <= 16) begin
-		is_inside = 1;
-	end 
-	else begin
-		is_inside = 0;
-	end
-end
-
-endmodule
-
-
 //Report1
-/*
+
 module Inside (
 input [3:0] x,
 input [3:0] y,
@@ -58,6 +32,30 @@ always @(*) begin
 end
 
 endmodule
+
+/*
+//Report2
+module Inside (
+input [3:0] x,
+input [3:0] y,
+input [3:0] circle_x,
+input [3:0] circle_y,
+output reg is_inside // 1: is inside, 0: is outside
+);
+
+wire signed [4:0] dis_x = circle_x - x;
+wire signed [4:0] dis_y = circle_y - y;
+
+wire [9:0] dis =  dis_x**2 + dis_y**2;
+
+always @(*) begin 
+	if (dis <= 16) begin
+		is_inside = 1;
+	end 
+	else begin
+		is_inside = 0;
+	end
+end
+
+endmodule
 */
-
-

@@ -3,7 +3,7 @@
 Report : resources
 Design : Inside
 Version: N-2017.09-SP2
-Date   : Fri Mar 31 19:07:47 2023
+Date   : Fri Mar 31 20:21:19 2023
 ****************************************
 
 Resource Sharing Report for design Inside in file
@@ -13,12 +13,27 @@ Resource Sharing Report for design Inside in file
 |          |              |            | Contained     |                      |
 | Resource | Module       | Parameters | Resources     | Contained Operations |
 ===============================================================================
-| r315     | DW01_sub     | width=5    |               | sub_9                |
-| r317     | DW01_add     | width=6    |               | add_1_root_add_12    |
-| r319     | DW01_sub     | width=6    |               | sub_0_root_add_12    |
-| r321     | DW_cmp       | width=10   |               | lte_15               |
+| r319     | DW01_sub     | width=5    |               | sub_10               |
+| r321     | DW01_sub     | width=5    |               | sub_11               |
+| r323     | DW_mult_tc   | a_width=5  |               | mult_pow_13          |
+|          |              | b_width=5  |               |                      |
+| r325     | DW_mult_tc   | a_width=5  |               | mult_pow_13_2        |
+|          |              | b_width=5  |               |                      |
+| r327     | DW01_add     | width=10   |               | add_13               |
+| r329     | DW_cmp       | width=10   |               | lte_16               |
 ===============================================================================
 
 
-No implementations to report
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| mult_pow_13_2      | DW_mult_tc       | apparch (area)     |                |
+|                    |                  | mult_arch: and     |                |
+| mult_pow_13        | DW_mult_tc       | apparch (area)     |                |
+|                    |                  | mult_arch: and     |                |
+| add_13             | DW01_add         | rpl                |                |
+===============================================================================
+
 1
