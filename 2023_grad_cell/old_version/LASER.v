@@ -37,11 +37,7 @@ reg [7:0]  circal_loc_C1,circal_loc_C2;
 reg[39:0] or_result;
 reg[5:0] opt_c2_obj_num_wr;
 
-wire read_done_f =  state_RD_data&& scan_valid_cnt == 'd39;
-wire scan_c1_done_f = state_SCAN_C1 && scan_valid_cnt == 'd39;
-wire scan_c2_done_f = state_SCAN_C2 && scan_valid_cnt == 'd39;
-wire det_max_c1_done_f = state_DET_MAX_OBJ_POS_C1 && col_ptr == 'd15 && row_ptr == 'd15;
-wire det_max_c2_done_f = state_DET_MAX_OBJ_POS_C2 && col_ptr == 'd15 && row_ptr == 'd15;
+
 
 wire state_RD_data 		      = curr_state == RD_DATA;
 wire state_SCAN_C2			  = curr_state == SCAN_C2;
@@ -50,6 +46,12 @@ wire state_DET_MAX_OBJ_POS_C2 = curr_state == DET_MAX_OBJ_POS_C2;
 wire state_DET_MAX_OBJ_POS_C1 = curr_state == DET_MAX_OBJ_POS_C1;
 wire state_out 				  = curr_state == OUT;
 
+
+wire read_done_f =  state_RD_data&& scan_valid_cnt == 'd39;
+wire scan_c1_done_f = state_SCAN_C1 && scan_valid_cnt == 'd39;
+wire scan_c2_done_f = state_SCAN_C2 && scan_valid_cnt == 'd39;
+wire det_max_c1_done_f = state_DET_MAX_OBJ_POS_C1 && col_ptr == 'd15 && row_ptr == 'd15;
+wire det_max_c2_done_f = state_DET_MAX_OBJ_POS_C2 && col_ptr == 'd15 && row_ptr == 'd15;
 //================================================================
 //   WIRE
 //================================================================

@@ -1,0 +1,24 @@
+ 
+****************************************
+Report : resources
+Design : Inside
+Version: N-2017.09-SP2
+Date   : Fri Mar 31 19:07:47 2023
+****************************************
+
+Resource Sharing Report for design Inside in file
+        /home/rain/IC_contest/2023_grad_cell/2023_grad_cell/is_inside/Inside.v
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r315     | DW01_sub     | width=5    |               | sub_9                |
+| r317     | DW01_add     | width=6    |               | add_1_root_add_12    |
+| r319     | DW01_sub     | width=6    |               | sub_0_root_add_12    |
+| r321     | DW_cmp       | width=10   |               | lte_15               |
+===============================================================================
+
+
+No implementations to report
+1
