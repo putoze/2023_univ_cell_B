@@ -32,19 +32,20 @@ genvar idx;
 //================================================================
 reg [2:0] curr_state,next_state;
 reg [5:0] global_cnt;
-reg [10:0] iter_cnt;
+reg [2:0] iter_cnt;
 reg [7:0] obj_mem[0:39];//obj_x [3:0];obj_y [7:4]
 reg [3:0] col_ptr,row_ptr;
 reg [7:0] circal_loc_C1,circal_loc_C2;
-reg [5:0] opt_num;
-reg [39:0] max_c1_dirty,max_c2_dirty,tmp_dirty ;
+reg [5:0] opt_num,opt_num_tmp;
+reg [39:0] max_c1_dirty,max_c2_dirty ;
+reg [39:0] tmp_dirty;
 
 //================================================================
 //   WIRE
 //================================================================
 
-reg [5:0] opt_num_w;
-reg [39:0] or_result;
+reg [5:0]  opt_num_w;
+reg [PARALLEL-1:0] or_result;
 
 //state indicater
 wire state_IDLE      = curr_state == IDLE;
@@ -58,7 +59,7 @@ wire rd_done         = global_cnt == OBJ_NUM -1 && state_READ;
 wire IS_INSIDE_done  = global_cnt == OBJ_NUM - PARALLEL && state_IS_INSIDE;
 wire row_boundary    = row_ptr    == 'd15;
 wire col_boundary    = col_ptr    == 'd15;
-wire opt_tmp_lr_max  = opt_num_w  >= opt_num; //larger than
+wire opt_tmp_lr_max  = opt_num_tmp >= opt_num; //larger than
 wire one_iter_done   = state_FIND_BEST && row_boundary && col_boundary;
 wire FIND_BEST_done  = iter_cnt   == MAX_ITER -1 && one_iter_done;
 
@@ -83,7 +84,7 @@ endgenerate
 //================================================================
 //   FSM
 //================================================================
-always @(posedge CLK) begin
+always @(posedge CLK or posedge RST) begin
 	if(RST) begin
 		curr_state <= READ;
 	end 
@@ -114,7 +115,7 @@ endgenerate
 //================================================================
 //   OUT
 //================================================================
-always @(posedge CLK) begin 
+always @(posedge CLK or posedge RST) begin 
 	if(RST) begin
 		C1X  <= 0;
 		C1Y  <= 0;
@@ -142,7 +143,7 @@ end
 //   DESIGN
 //================================================================
 
-always @(posedge CLK) begin 
+always @(posedge CLK or posedge RST) begin 
 	if(RST) begin
 		global_cnt <= 'd0;
 	end 
@@ -161,7 +162,7 @@ always @(posedge CLK) begin
 end
 
 //obj_mem
-always @(posedge CLK) begin
+always @(posedge CLK or posedge RST) begin
 	if(RST) begin
 		for (i = 0; i < 40; i=i+1) begin
 		    obj_mem[i] <= 'd0;
@@ -172,7 +173,7 @@ always @(posedge CLK) begin
 	end
 end
 
-always @(posedge CLK) begin 
+always @(posedge CLK or posedge RST) begin 
 	if(RST) begin
 		col_ptr <= 'd0;
 	end 
@@ -181,7 +182,7 @@ always @(posedge CLK) begin
 	end
 end
 
-always @(posedge CLK) begin 
+always @(posedge CLK or posedge RST) begin 
 	if(RST) begin
 		row_ptr <= 'd0;
 	end 
@@ -190,7 +191,7 @@ always @(posedge CLK) begin
 	end
 end
 
-always @(posedge CLK) begin 
+always @(posedge CLK or posedge RST) begin 
 	if(RST) begin
 		iter_cnt <= 0;
 	end 
@@ -202,7 +203,7 @@ always @(posedge CLK) begin
 	end
 end
 
-always @(posedge CLK) begin 
+always @(posedge CLK or posedge RST) begin 
 	if(RST) begin
 		circal_loc_C1 <= 0;
 	end 
@@ -217,7 +218,7 @@ always @(posedge CLK) begin
 	end
 end
 
-always @(posedge CLK) begin 
+always @(posedge CLK or posedge RST) begin 
 	if(RST) begin
 		circal_loc_C2 <= 0;
 	end 
@@ -229,7 +230,7 @@ always @(posedge CLK) begin
 	end
 end
 
-always @(posedge CLK) begin 
+always @(posedge CLK or posedge RST) begin 
 	if(RST) begin
 		tmp_dirty <= 0;
 	end 
@@ -238,7 +239,7 @@ always @(posedge CLK) begin
 	end
 end
 
-always @(posedge CLK) begin 
+always @(posedge CLK or posedge RST) begin 
 	if(RST) begin
 		max_c1_dirty <= 0;
 	end 
@@ -253,7 +254,7 @@ always @(posedge CLK) begin
 	end 
 end
 
-always @(posedge CLK) begin 
+always @(posedge CLK or posedge RST) begin 
 	if(RST) begin
 		max_c2_dirty <= 0;
 	end 
@@ -265,23 +266,35 @@ always @(posedge CLK) begin
 	end 
 end
 
-always @(posedge CLK) begin 
+always @(posedge CLK or posedge RST) begin 
 	if(RST) begin
 		opt_num <= 0;
 	end 
 	else if(state_FIND_BEST) begin
-		opt_num <= opt_tmp_lr_max ? opt_num_w : opt_num;
+		opt_num <= opt_tmp_lr_max ? opt_num_tmp : opt_num;
 	end
 	else if(state_IDLE) begin
 		opt_num <= 0;
 	end 
 end
 
+always @(posedge CLK or posedge RST) begin 
+	if(RST) begin
+		opt_num_tmp <= 0;
+	end 
+	else if(state_IS_INSIDE) begin
+		opt_num_tmp <= opt_num_tmp + opt_num_w;
+	end
+	else if(state_FIND_BEST) begin
+		opt_num_tmp <= 0;
+	end 
+end
+
 always@(*)
 begin
-	or_result = max_c2_dirty | tmp_dirty ; 
+	or_result = max_c2_dirty[PARALLEL+global_cnt-:PARALLEL] | is_inside ; 
     opt_num_w = 0;  //initialize count variable
-    for(i=0;i<40;i=i+1)   //check for all the bits
+    for(i=0;i<PARALLEL;i=i+1)   //check for all the bits
         if(or_result[i] == 1'b1)    //check if the bit is '1'
             opt_num_w = opt_num_w + 1;    //if its one, increment the count
 end
