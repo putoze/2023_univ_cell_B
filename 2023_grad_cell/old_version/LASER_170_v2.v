@@ -21,8 +21,8 @@ localparam FIND_BEST = 3'd3;
 localparam OUT       = 3'd4;
 
 localparam OBJ_NUM  = 40;
-localparam PARALLEL = 5;
-localparam IS_INSIDE_NUM = 8; // OBJ_NUM / PARALLEL
+localparam PARALLEL = 10;
+localparam IS_INSIDE_NUM = 4; // OBJ_NUM / PARALLEL
 localparam MAX_ITER = 6;
 
 integer i;
@@ -62,8 +62,10 @@ reg  state_IS_INSIDE_d;
 //flag
 wire rd_done         = global_cnt == OBJ_NUM -1 && state_READ;
 wire IS_INSIDE_done  = global_cnt == IS_INSIDE_NUM - 1 && state_IS_INSIDE;
+wire row_boundary    = row_ptr    == 'd15;
+wire col_boundary    = col_ptr    == 'd15;
 wire opt_tmp_lr_max  = opt_num_w  >= opt_num; //larger than
-wire one_iter_done   = state_FIND_BEST && {row_ptr,col_ptr} == {8{1'b1}};
+wire one_iter_done   = state_FIND_BEST && row_boundary && col_boundary;
 wire FIND_BEST_done  = (iter_cnt   == MAX_ITER -1 || circal_loc_max == circal_loc_C1) && one_iter_done;
 
 //wire 
@@ -125,25 +127,19 @@ always @(posedge CLK) begin
 		C2Y  <= 0;
 		DONE <= 0;
 	end 
+	else if(state_OUT)begin
+		C1X  <= circal_loc_C1[3:0];
+		C1Y  <= circal_loc_C1[7:4];
+		C2X  <= circal_loc_C2[3:0];
+		C2Y  <= circal_loc_C2[7:4];
+		DONE <= 1;
+	end
 	else begin
-		case (curr_state)
-			OUT : 
-			begin
-				C1X  <= circal_loc_C1[3:0];
-				C1Y  <= circal_loc_C1[7:4];
-				C2X  <= circal_loc_C2[3:0];
-				C2Y  <= circal_loc_C2[7:4];
-				DONE <= 1;
-			end
-			default : 
-			begin
-				C1X  <= 0;
-				C1Y  <= 0;
-				C2X  <= 0;
-				C2Y  <= 0;
-				DONE <= 0;
-			end
-		endcase
+		C1X  <= 0;
+		C1Y  <= 0;
+		C2X  <= 0;
+		C2Y  <= 0;
+		DONE <= 0;
 	end
 end
 
@@ -165,8 +161,7 @@ always @(posedge CLK or posedge RST) begin
 			cur_pos_X[i] = 'd0;
 			cur_pos_Y[i] = 'd0;
 		end
-	end
-	else begin
+	end else begin
 		for (i=0;i < PARALLEL;i=i+1) begin
 			cur_pos_X[i] = state_IS_INSIDE ? obj_mem[cur_pos_idx[i]][3:0] : 'd0;
 			cur_pos_Y[i] = state_IS_INSIDE ? obj_mem[cur_pos_idx[i]][7:4] : 'd0;
@@ -216,12 +211,21 @@ always @(posedge CLK) begin
 	end
 end
 
-always @(posedge CLK or posedge RST) begin 
+always @(posedge CLK) begin 
 	if(RST) begin
-		{row_ptr,col_ptr} <= 'd0;
+		col_ptr <= 'd0;
 	end 
 	else if(state_FIND_BEST) begin
-		{row_ptr,col_ptr} <= {row_ptr,col_ptr} + 'd1;
+		col_ptr <= col_boundary ? 'd0 : col_ptr + 'd1;
+	end
+end
+
+always @(posedge CLK) begin 
+	if(RST) begin
+		row_ptr <= 'd0;
+	end 
+	else if(state_FIND_BEST) begin
+		row_ptr <= col_boundary ? (row_boundary ? 'd0 : row_ptr + 'd1) : row_ptr;
 	end
 end
 
