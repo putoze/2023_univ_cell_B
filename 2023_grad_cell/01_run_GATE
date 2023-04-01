@@ -1,0 +1,2 @@
+ncverilog tb.sv -define GATE -debug -v tsmc13_neg.v -define SDF 
+//ncverilog tb.sv -define GATE -debug -v tsmc13_neg.v +nospecify

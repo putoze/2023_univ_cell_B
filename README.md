@@ -14,4 +14,17 @@
 <p align="middle">
   <img src="img/result.png" width="800" />
 </p>
+<p align="middle">
+  <img src="img/area.png" width="800" />
+</p>
+<p align="middle">
+  <img src="img/timing.png" width="800" />
+</p>
 
+## dc
+
+- dcprocheck 
+check tcl correction
+
+- dc note
+https://ithelp.ithome.com.tw/articles/10231993

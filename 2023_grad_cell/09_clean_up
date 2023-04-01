@@ -1,0 +1,6 @@
+rm -rf INCA_libs nWaveLog
+rm -rf *.fsdb
+rm -rf *~
+rm -rf dwsvf*
+rm -rf alib*
+rm -rf default.svf

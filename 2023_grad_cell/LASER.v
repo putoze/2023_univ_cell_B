@@ -110,7 +110,7 @@ end
 //================================================================
 generate 
 	for(idx=0;idx<PARALLEL;idx=idx+1) begin
-		Inside inst_Inside (.x(cur_pos_X[idx]), .y(cur_pos_Y[idx]), .circle_x(col_ptr), .circle_y(row_ptr), .is_inside(is_inside[idx]));
+		Inside inst_Inside (.in_x(cur_pos_X[idx]), .in_y(cur_pos_Y[idx]), .circle_x(col_ptr), .circle_y(row_ptr), .is_inside(is_inside[idx]));
 	end
 endgenerate
 
@@ -340,15 +340,15 @@ end
 endmodule
 
 module Inside (
-input [3:0] x,
-input [3:0] y,
+input [3:0] in_x,
+input [3:0] in_y,
 input [3:0] circle_x,
 input [3:0] circle_y,
 output reg is_inside // 1: is inside, 0: is outside
 );
 
-wire [3:0] dis_x = x > circle_x ? x - circle_x : circle_x - x; 
-wire [3:0] dis_y = y > circle_y ? y - circle_y : circle_y - y; 
+wire [3:0] dis_x = in_x > circle_x ? in_x - circle_x : circle_x - in_x; 
+wire [3:0] dis_y = in_y > circle_y ? in_y - circle_y : circle_y - in_y; 
 wire [4:0] dis   = dis_x + dis_y;
 
 always @(*) begin 

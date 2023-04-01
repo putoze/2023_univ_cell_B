@@ -1,10 +1,19 @@
 `timescale 1ns/10ps
 `define CYCLE      8.0  
-`define SDFFILE    "./LASER_syn.sdf"
+//`define SDFFILE    "./LASER_syn.sdf"
+`define SDFFILE    "./Netlist/LASER_SYN.sdf"
 `define MAX_CYCLE_PER_PATTERN  50000
 //`define USECOLOR 
 //`define P1
 
+`ifdef RTL
+  `include "./LASER.v"
+`endif
+
+`ifdef GATE
+  //`include "./LASER_syn.v"
+  `include "./Netlist/LASER_SYN.v"
+`endif
 
 module testfixture();
 integer fd;
@@ -40,11 +49,11 @@ LASER u_LASER(
 
 always begin #(`CYCLE/2) CLK = ~CLK; end
 
-//initial begin
-//    $fsdbDumpfile("LASER.fsdb");
-//    $fsdbDumpvars();
-//    $fsdbDumpMDA;
-//end
+initial begin
+    $fsdbDumpfile("./FSDB/LASER.fsdb");
+    $fsdbDumpvars();
+    $fsdbDumpMDA;
+end
 
 //initial begin
 //    $dumpvars();
@@ -52,30 +61,30 @@ always begin #(`CYCLE/2) CLK = ~CLK; end
 //end
 
 `ifdef P1
-    string PAT [1] = {"C:/Users/User/Desktop/ic_contest_2023/2023_grad_cell/img1.pattern"};
+    string PAT [1] = {"./img1.pattern"};
     parameter pat_number = 1;
 `elsif P2
-    string PAT [1] = {"C:/Users/User/Desktop/ic_contest_2023/2023_grad_cell/img2.pattern"};
+    string PAT [1] = {"C:/Users/User/Desktop/ic_contest_2023/2023_grad_cell/2023_grad_cell/2023_grad_cell/img2.pattern"};
     parameter pat_number = 1;
 `elsif P3
-    string PAT [1] = {"C:/Users/User/Desktop/ic_contest_2023/2023_grad_cell/img3.pattern"};
+    string PAT [1] = {"C:/Users/User/Desktop/ic_contest_2023/2023_grad_cell/2023_grad_cell/2023_grad_cell/img3.pattern"};
     parameter pat_number = 1;
 `elsif P4
-    string PAT [1] = {"C:/Users/User/Desktop/ic_contest_2023/2023_grad_cell/img4.pattern"};
+    string PAT [1] = {"C:/Users/User/Desktop/ic_contest_2023/2023_grad_cell/2023_grad_cell/2023_grad_cell/img4.pattern"};
     parameter pat_number = 1;
 `elsif P5
-    string PAT [1] = {"C:/Users/User/Desktop/ic_contest_2023/2023_grad_cell/img5.pattern"};
+    string PAT [1] = {"C:/Users/User/Desktop/ic_contest_2023/2023_grad_cell/2023_grad_cell/2023_grad_cell/img5.pattern"};
     parameter pat_number = 1;
 `elsif P6
-    string PAT [1] = {"C:/Users/User/Desktop/ic_contest_2023/2023_grad_cell/img6.pattern"};
+    string PAT [1] = {"C:/Users/User/Desktop/ic_contest_2023/2023_grad_cell/2023_grad_cell/2023_grad_cell/img6.pattern"};
     parameter pat_number = 1;
 `else
-    string PAT [6] = {"C:/Users/User/Desktop/ic_contest_2023/2023_grad_cell/img1.pattern",
-    "C:/Users/User/Desktop/ic_contest_2023/2023_grad_cell/img2.pattern",
-    "C:/Users/User/Desktop/ic_contest_2023/2023_grad_cell/img3.pattern",
-    "C:/Users/User/Desktop/ic_contest_2023/2023_grad_cell/img4.pattern",
-    "C:/Users/User/Desktop/ic_contest_2023/2023_grad_cell/img5.pattern",
-    "C:/Users/User/Desktop/ic_contest_2023/2023_grad_cell/img6.pattern"};
+    string PAT [6] = {"./img1.pattern",
+    "./img2.pattern",
+    "./img3.pattern",
+    "./img4.pattern",
+    "./img5.pattern",
+    "./img6.pattern"};
     parameter pat_number = 6;
 `endif
 
