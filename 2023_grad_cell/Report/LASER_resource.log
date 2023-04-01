@@ -3,294 +3,48 @@
 Report : resources
 Design : LASER
 Version: N-2017.09-SP2
-Date   : Sat Apr  1 14:49:21 2023
+Date   : Sat Apr  1 20:18:15 2023
 ****************************************
 
-
-Resource Report for this hierarchy in file
+Resource Sharing Report for design LASER in file
         /home/rain/IC_contest/2023_grad_cell/2023_grad_cell/2023_grad_cell/LASER.v
-=============================================================================
-| Cell           | Module         | Parameters | Contained Operations       |
-=============================================================================
-| gte_x_1        | DW_cmp         | width=6    | gte_65 (LASER.v:65)        |
-| eq_x_2         | DW_cmp         | width=8    | eq_67_2 (LASER.v:67)       |
-| add_x_3        | DW01_add       | width=6    | add_81_G2 (LASER.v:81)     |
-| add_x_4        | DW01_add       | width=6    | add_81_G3 (LASER.v:81)     |
-| add_x_5        | DW01_add       | width=6    | add_81_G4 (LASER.v:81)     |
-| add_x_6        | DW01_add       | width=6    | add_81_G5 (LASER.v:81)     |
-| add_x_43       | DW01_inc       | width=6    | add_197 (LASER.v:197)      |
-| add_x_48       | DW01_inc       | width=8    | add_224 (LASER.v:224)      |
-| add_x_49       | DW01_inc       | width=3    | add_233 (LASER.v:233)      |
-| gt_x_432       | DW_cmp         | width=4    | genblk2[0].inst_Inside/gt_350 (LASER.v:350) |
-| sub_x_433      | DW01_sub       | width=4    | genblk2[0].inst_Inside/sub_350 (LASER.v:350) |
-| sub_x_434      | DW01_sub       | width=4    | genblk2[0].inst_Inside/sub_350_2 (LASER.v:350) |
-| gt_x_436       | DW_cmp         | width=4    | genblk2[0].inst_Inside/gt_351 (LASER.v:351) |
-| sub_x_437      | DW01_sub       | width=4    | genblk2[0].inst_Inside/sub_351 (LASER.v:351) |
-| sub_x_438      | DW01_sub       | width=4    | genblk2[0].inst_Inside/sub_351_2 (LASER.v:351) |
-| gt_x_441       | DW_cmp         | width=4    | genblk2[4].inst_Inside/gt_350 (LASER.v:350) |
-| sub_x_442      | DW01_sub       | width=4    | genblk2[4].inst_Inside/sub_350 (LASER.v:350) |
-| sub_x_443      | DW01_sub       | width=4    | genblk2[4].inst_Inside/sub_350_2 (LASER.v:350) |
-| gt_x_445       | DW_cmp         | width=4    | genblk2[4].inst_Inside/gt_351 (LASER.v:351) |
-| sub_x_446      | DW01_sub       | width=4    | genblk2[4].inst_Inside/sub_351 (LASER.v:351) |
-| sub_x_447      | DW01_sub       | width=4    | genblk2[4].inst_Inside/sub_351_2 (LASER.v:351) |
-| gt_x_450       | DW_cmp         | width=4    | genblk2[3].inst_Inside/gt_350 (LASER.v:350) |
-| sub_x_451      | DW01_sub       | width=4    | genblk2[3].inst_Inside/sub_350 (LASER.v:350) |
-| sub_x_452      | DW01_sub       | width=4    | genblk2[3].inst_Inside/sub_350_2 (LASER.v:350) |
-| gt_x_454       | DW_cmp         | width=4    | genblk2[3].inst_Inside/gt_351 (LASER.v:351) |
-| sub_x_455      | DW01_sub       | width=4    | genblk2[3].inst_Inside/sub_351 (LASER.v:351) |
-| sub_x_456      | DW01_sub       | width=4    | genblk2[3].inst_Inside/sub_351_2 (LASER.v:351) |
-| gt_x_459       | DW_cmp         | width=4    | genblk2[2].inst_Inside/gt_350 (LASER.v:350) |
-| sub_x_460      | DW01_sub       | width=4    | genblk2[2].inst_Inside/sub_350 (LASER.v:350) |
-| sub_x_461      | DW01_sub       | width=4    | genblk2[2].inst_Inside/sub_350_2 (LASER.v:350) |
-| gt_x_463       | DW_cmp         | width=4    | genblk2[2].inst_Inside/gt_351 (LASER.v:351) |
-| sub_x_464      | DW01_sub       | width=4    | genblk2[2].inst_Inside/sub_351 (LASER.v:351) |
-| sub_x_465      | DW01_sub       | width=4    | genblk2[2].inst_Inside/sub_351_2 (LASER.v:351) |
-| gt_x_468       | DW_cmp         | width=4    | genblk2[1].inst_Inside/gt_350 (LASER.v:350) |
-| sub_x_469      | DW01_sub       | width=4    | genblk2[1].inst_Inside/sub_350 (LASER.v:350) |
-| sub_x_470      | DW01_sub       | width=4    | genblk2[1].inst_Inside/sub_350_2 (LASER.v:350) |
-| gt_x_472       | DW_cmp         | width=4    | genblk2[1].inst_Inside/gt_351 (LASER.v:351) |
-| sub_x_473      | DW01_sub       | width=4    | genblk2[1].inst_Inside/sub_351 (LASER.v:351) |
-| sub_x_474      | DW01_sub       | width=4    | genblk2[1].inst_Inside/sub_351_2 (LASER.v:351) |
-| DP_OP_982J1_122_3642            |            |                            |
-|                | DP_OP_982J1_122_3642 |      |                            |
-| DP_OP_983J1_123_5746            |            |                            |
-|                | DP_OP_983J1_123_5746 |      |                            |
-| DP_OP_984J1_124_5746            |            |                            |
-|                | DP_OP_984J1_124_5746 |      |                            |
-| DP_OP_985J1_125_5746            |            |                            |
-|                | DP_OP_985J1_125_5746 |      |                            |
-| DP_OP_986J1_126_5746            |            |                            |
-|                | DP_OP_986J1_126_5746 |      |                            |
-| DP_OP_987J1_127_5746            |            |                            |
-|                | DP_OP_987J1_127_5746 |      |                            |
-=============================================================================
 
-Datapath Report for DP_OP_982J1_122_3642
-==============================================================================
-| Cell                 | Contained Operations                                |
-==============================================================================
-| DP_OP_982J1_122_3642 | add_337_I2_aco (LASER.v:337)                        |
-|                      | add_337_I3_aco (LASER.v:337)                        |
-|                      | add_337_I4_aco (LASER.v:337)                        |
-|                      | add_337_I5_aco (LASER.v:337)                        |
-|                      | add_337_I6_aco (LASER.v:337)                        |
-|                      | add_337_I7_aco (LASER.v:337)                        |
-|                      | add_337_I8_aco (LASER.v:337)                        |
-|                      | add_337_I9_aco (LASER.v:337)                        |
-|                      | add_337_I10_aco (LASER.v:337)                       |
-|                      | add_337_I11_aco (LASER.v:337)                       |
-|                      | add_337_I12_aco (LASER.v:337)                       |
-|                      | add_337_I13_aco (LASER.v:337)                       |
-|                      | add_337_I14_aco (LASER.v:337)                       |
-|                      | add_337_I15_aco (LASER.v:337)                       |
-|                      | add_337_I16_aco (LASER.v:337)                       |
-|                      | add_337_I17_aco (LASER.v:337)                       |
-|                      | add_337_I18_aco (LASER.v:337)                       |
-|                      | add_337_I19_aco (LASER.v:337)                       |
-|                      | add_337_I20_aco (LASER.v:337)                       |
-|                      | add_337_I21_aco (LASER.v:337)                       |
-|                      | add_337_I22_aco (LASER.v:337)                       |
-|                      | add_337_I23_aco (LASER.v:337)                       |
-|                      | add_337_I24_aco (LASER.v:337)                       |
-|                      | add_337_I25_aco (LASER.v:337)                       |
-|                      | add_337_I26_aco (LASER.v:337)                       |
-|                      | add_337_I27_aco (LASER.v:337)                       |
-|                      | add_337_I28_aco (LASER.v:337)                       |
-|                      | add_337_I29_aco (LASER.v:337)                       |
-|                      | add_337_I30_aco (LASER.v:337)                       |
-|                      | add_337_I31_aco (LASER.v:337)                       |
-|                      | add_337_I32_aco (LASER.v:337)                       |
-|                      | add_337_I33_aco (LASER.v:337)                       |
-|                      | add_337_I34_aco (LASER.v:337)                       |
-|                      | add_337_I35_aco (LASER.v:337)                       |
-|                      | add_337_I36_aco (LASER.v:337)                       |
-|                      | add_337_I37_aco (LASER.v:337)                       |
-|                      | add_337_I38_aco (LASER.v:337)                       |
-|                      | add_337_I39_aco (LASER.v:337)                       |
-|                      | add_337_I40 (LASER.v:337)                           |
-==============================================================================
-
-==============================================================================
-|       |      | Data     |       |                                          |
-| Var   | Type | Class    | Width | Expression                               |
-==============================================================================
-| I1    | PI   | Unsigned | 1     |                                          |
-| I2    | PI   | Unsigned | 1     |                                          |
-| I3    | PI   | Unsigned | 1     |                                          |
-| I4    | PI   | Unsigned | 1     |                                          |
-| I5    | PI   | Unsigned | 1     |                                          |
-| I6    | PI   | Unsigned | 1     |                                          |
-| I7    | PI   | Unsigned | 1     |                                          |
-| I8    | PI   | Unsigned | 1     |                                          |
-| I9    | PI   | Unsigned | 1     |                                          |
-| I10   | PI   | Unsigned | 1     |                                          |
-| I11   | PI   | Unsigned | 1     |                                          |
-| I12   | PI   | Unsigned | 1     |                                          |
-| I13   | PI   | Unsigned | 1     |                                          |
-| I14   | PI   | Unsigned | 1     |                                          |
-| I15   | PI   | Unsigned | 1     |                                          |
-| I16   | PI   | Unsigned | 1     |                                          |
-| I17   | PI   | Unsigned | 1     |                                          |
-| I18   | PI   | Unsigned | 1     |                                          |
-| I19   | PI   | Unsigned | 1     |                                          |
-| I20   | PI   | Unsigned | 1     |                                          |
-| I21   | PI   | Unsigned | 1     |                                          |
-| I22   | PI   | Unsigned | 1     |                                          |
-| I23   | PI   | Unsigned | 1     |                                          |
-| I24   | PI   | Unsigned | 1     |                                          |
-| I25   | PI   | Unsigned | 1     |                                          |
-| I26   | PI   | Unsigned | 1     |                                          |
-| I27   | PI   | Unsigned | 1     |                                          |
-| I28   | PI   | Unsigned | 1     |                                          |
-| I29   | PI   | Unsigned | 1     |                                          |
-| I30   | PI   | Unsigned | 1     |                                          |
-| I31   | PI   | Unsigned | 1     |                                          |
-| I32   | PI   | Unsigned | 1     |                                          |
-| I33   | PI   | Unsigned | 1     |                                          |
-| I34   | PI   | Unsigned | 1     |                                          |
-| I35   | PI   | Unsigned | 1     |                                          |
-| I36   | PI   | Unsigned | 1     |                                          |
-| I37   | PI   | Unsigned | 1     |                                          |
-| I38   | PI   | Unsigned | 1     |                                          |
-| I39   | PI   | Unsigned | 1     |                                          |
-| O1    | PO   | Unsigned | 6     | I1 + I2 + I3 + I4 + I5 + I6 + I7 + I8 + I9 + I10 + I11 + I12 + I13 + I14 + I15 + I16 + I17 + I18 + I19 + I20 + I21 + I22 + I23 + I24 + I25 + I26 + I27 + I28 + I29 + I30 + I31 + I32 + I33 + I34 + I35 + I36 + I37 + I38 + I39 (LASER.v:337) |
-| O2    | PO   | Unsigned | 6     | O1 + $unsigned(1'b1) (LASER.v:337)       |
-==============================================================================
-
-Datapath Report for DP_OP_983J1_123_5746
-==============================================================================
-| Cell                 | Contained Operations                                |
-==============================================================================
-| DP_OP_983J1_123_5746 | genblk2[0].inst_Inside/add_352 (LASER.v:352)        |
-|                      | genblk2[0].inst_Inside/lte_355 (LASER.v:355)        |
-==============================================================================
-
-==============================================================================
-|       |      | Data     |       |                                          |
-| Var   | Type | Class    | Width | Expression                               |
-==============================================================================
-| I1    | PI   | Unsigned | 4     |                                          |
-| I2    | PI   | Unsigned | 4     |                                          |
-| T464  | IFO  | Unsigned | 5     | I1 + I2 (LASER.v:352)                    |
-| O1    | PO   | Unsigned | 1     | T464 <= $unsigned(3'b100) (LASER.v:355)  |
-==============================================================================
-
-Datapath Report for DP_OP_984J1_124_5746
-==============================================================================
-| Cell                 | Contained Operations                                |
-==============================================================================
-| DP_OP_984J1_124_5746 | genblk2[4].inst_Inside/add_352 (LASER.v:352)        |
-|                      | genblk2[4].inst_Inside/lte_355 (LASER.v:355)        |
-==============================================================================
-
-==============================================================================
-|       |      | Data     |       |                                          |
-| Var   | Type | Class    | Width | Expression                               |
-==============================================================================
-| I1    | PI   | Unsigned | 4     |                                          |
-| I2    | PI   | Unsigned | 4     |                                          |
-| T475  | IFO  | Unsigned | 5     | I1 + I2 (LASER.v:352)                    |
-| O1    | PO   | Unsigned | 1     | T475 <= $unsigned(3'b100) (LASER.v:355)  |
-==============================================================================
-
-Datapath Report for DP_OP_985J1_125_5746
-==============================================================================
-| Cell                 | Contained Operations                                |
-==============================================================================
-| DP_OP_985J1_125_5746 | genblk2[3].inst_Inside/add_352 (LASER.v:352)        |
-|                      | genblk2[3].inst_Inside/lte_355 (LASER.v:355)        |
-==============================================================================
-
-==============================================================================
-|       |      | Data     |       |                                          |
-| Var   | Type | Class    | Width | Expression                               |
-==============================================================================
-| I1    | PI   | Unsigned | 4     |                                          |
-| I2    | PI   | Unsigned | 4     |                                          |
-| T486  | IFO  | Unsigned | 5     | I1 + I2 (LASER.v:352)                    |
-| O1    | PO   | Unsigned | 1     | T486 <= $unsigned(3'b100) (LASER.v:355)  |
-==============================================================================
-
-Datapath Report for DP_OP_986J1_126_5746
-==============================================================================
-| Cell                 | Contained Operations                                |
-==============================================================================
-| DP_OP_986J1_126_5746 | genblk2[2].inst_Inside/add_352 (LASER.v:352)        |
-|                      | genblk2[2].inst_Inside/lte_355 (LASER.v:355)        |
-==============================================================================
-
-==============================================================================
-|       |      | Data     |       |                                          |
-| Var   | Type | Class    | Width | Expression                               |
-==============================================================================
-| I1    | PI   | Unsigned | 4     |                                          |
-| I2    | PI   | Unsigned | 4     |                                          |
-| T497  | IFO  | Unsigned | 5     | I1 + I2 (LASER.v:352)                    |
-| O1    | PO   | Unsigned | 1     | T497 <= $unsigned(3'b100) (LASER.v:355)  |
-==============================================================================
-
-Datapath Report for DP_OP_987J1_127_5746
-==============================================================================
-| Cell                 | Contained Operations                                |
-==============================================================================
-| DP_OP_987J1_127_5746 | genblk2[1].inst_Inside/add_352 (LASER.v:352)        |
-|                      | genblk2[1].inst_Inside/lte_355 (LASER.v:355)        |
-==============================================================================
-
-==============================================================================
-|       |      | Data     |       |                                          |
-| Var   | Type | Class    | Width | Expression                               |
-==============================================================================
-| I1    | PI   | Unsigned | 4     |                                          |
-| I2    | PI   | Unsigned | 4     |                                          |
-| T508  | IFO  | Unsigned | 5     | I1 + I2 (LASER.v:352)                    |
-| O1    | PO   | Unsigned | 1     | T508 <= $unsigned(3'b100) (LASER.v:355)  |
-==============================================================================
-
-
-Datapath Extraction Report
-
-Information: Operator associated with resources 'add_337_I40 (LASER.v:337)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'C5565 (LASER.v:336)'.  (HDL-120)
-
-Information: Operator associated with resources 'genblk2[0].inst_Inside/sub_350 (LASER.v:350)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[0].inst_Inside/C66 (LASER.v:350)'.  (HDL-120)
-
-Information: Operator associated with resources 'genblk2[0].inst_Inside/sub_350_2 (LASER.v:350)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[0].inst_Inside/C66 (LASER.v:350)'.  (HDL-120)
-
-Information: Operator associated with resources 'genblk2[0].inst_Inside/sub_351 (LASER.v:351)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[0].inst_Inside/C67 (LASER.v:351)'.  (HDL-120)
-
-Information: Operator associated with resources 'genblk2[0].inst_Inside/sub_351_2 (LASER.v:351)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[0].inst_Inside/C67 (LASER.v:351)'.  (HDL-120)
-
-Information: Operator associated with resources 'genblk2[4].inst_Inside/sub_350 (LASER.v:350)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[4].inst_Inside/C66 (LASER.v:350)'.  (HDL-120)
-
-Information: Operator associated with resources 'genblk2[4].inst_Inside/sub_350_2 (LASER.v:350)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[4].inst_Inside/C66 (LASER.v:350)'.  (HDL-120)
-
-Information: Operator associated with resources 'genblk2[4].inst_Inside/sub_351 (LASER.v:351)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[4].inst_Inside/C67 (LASER.v:351)'.  (HDL-120)
-
-Information: Operator associated with resources 'genblk2[4].inst_Inside/sub_351_2 (LASER.v:351)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[4].inst_Inside/C67 (LASER.v:351)'.  (HDL-120)
-
-Information: Operator associated with resources 'genblk2[3].inst_Inside/sub_350 (LASER.v:350)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[3].inst_Inside/C66 (LASER.v:350)'.  (HDL-120)
-
-Information: Operator associated with resources 'genblk2[3].inst_Inside/sub_350_2 (LASER.v:350)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[3].inst_Inside/C66 (LASER.v:350)'.  (HDL-120)
-
-Information: Operator associated with resources 'genblk2[3].inst_Inside/sub_351 (LASER.v:351)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[3].inst_Inside/C67 (LASER.v:351)'.  (HDL-120)
-
-Information: Operator associated with resources 'genblk2[3].inst_Inside/sub_351_2 (LASER.v:351)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[3].inst_Inside/C67 (LASER.v:351)'.  (HDL-120)
-
-Information: Operator associated with resources 'genblk2[2].inst_Inside/sub_350 (LASER.v:350)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[2].inst_Inside/C66 (LASER.v:350)'.  (HDL-120)
-
-Information: Operator associated with resources 'genblk2[2].inst_Inside/sub_350_2 (LASER.v:350)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[2].inst_Inside/C66 (LASER.v:350)'.  (HDL-120)
-
-Information: Operator associated with resources 'genblk2[2].inst_Inside/sub_351 (LASER.v:351)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[2].inst_Inside/C67 (LASER.v:351)'.  (HDL-120)
-
-Information: Operator associated with resources 'genblk2[2].inst_Inside/sub_351_2 (LASER.v:351)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[2].inst_Inside/C67 (LASER.v:351)'.  (HDL-120)
-
-Information: Operator associated with resources 'genblk2[1].inst_Inside/sub_350 (LASER.v:350)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[1].inst_Inside/C66 (LASER.v:350)'.  (HDL-120)
-
-Information: Operator associated with resources 'genblk2[1].inst_Inside/sub_350_2 (LASER.v:350)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[1].inst_Inside/C66 (LASER.v:350)'.  (HDL-120)
-
-Information: Operator associated with resources 'genblk2[1].inst_Inside/sub_351 (LASER.v:351)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[1].inst_Inside/C67 (LASER.v:351)'.  (HDL-120)
-
-Information: Operator associated with resources 'genblk2[1].inst_Inside/sub_351_2 (LASER.v:351)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[1].inst_Inside/C67 (LASER.v:351)'.  (HDL-120)
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r506     | DW_cmp       | width=6    |               | gte_61               |
+| r508     | DW_cmp       | width=8    |               | eq_63_2              |
+| r510     | DW01_inc     | width=6    |               | add_144              |
+| r512     | DW01_inc     | width=8    |               | add_181              |
+| r514     | DW01_inc     | width=3    |               | add_190              |
+| r566     | DW01_inc     | width=6    |               | add_299_I40          |
+| r1287    | DW01_add     | width=2    |               | add_37_root_add_299_I39_aco |
+| r1289    | DW01_add     | width=3    |               | add_36_root_add_299_I39_aco |
+| r1291    | DW01_add     | width=4    |               | add_35_root_add_299_I39_aco |
+| r1293    | DW01_add     | width=5    |               | add_34_root_add_299_I39_aco |
+| r1295    | DW01_add     | width=6    |               | add_12_root_add_13_root_add_299_I39_aco |
+| r1297    | DW01_add     | width=6    |               | add_13_root_add_13_root_add_299_I39_aco |
+| r1299    | DW01_add     | width=6    |               | add_16_root_add_13_root_add_299_I39_aco |
+| r1301    | DW01_add     | width=6    |               | add_17_root_add_13_root_add_299_I39_aco |
+| r1303    | DW01_add     | width=6    |               | add_19_root_add_13_root_add_299_I39_aco |
+| r1305    | DW01_add     | width=6    |               | add_20_root_add_13_root_add_299_I39_aco |
+| r1307    | DW01_add     | width=6    |               | add_3_root_add_13_root_add_299_I39_aco |
+| r1309    | DW01_add     | width=6    |               | add_4_root_add_13_root_add_299_I39_aco |
+| r1311    | DW01_add     | width=6    |               | add_6_root_add_13_root_add_299_I39_aco |
+| r1313    | DW01_add     | width=6    |               | add_7_root_add_13_root_add_299_I39_aco |
+| r1315    | DW01_add     | width=6    |               | add_10_root_add_13_root_add_299_I39_aco |
+| r1317    | DW01_add     | width=6    |               | add_11_root_add_13_root_add_299_I39_aco |
+| r1319    | DW01_add     | width=6    |               | add_15_root_add_13_root_add_299_I39_aco |
+| r1321    | DW01_add     | width=6    |               | add_18_root_add_13_root_add_299_I39_aco |
+| r1323    | DW01_add     | width=6    |               | add_2_root_add_13_root_add_299_I39_aco |
+| r1325    | DW01_add     | width=6    |               | add_5_root_add_13_root_add_299_I39_aco |
+| r1327    | DW01_add     | width=6    |               | add_9_root_add_13_root_add_299_I39_aco |
+| r1329    | DW01_add     | width=6    |               | add_14_root_add_13_root_add_299_I39_aco |
+| r1331    | DW01_add     | width=6    |               | add_1_root_add_13_root_add_299_I39_aco |
+| r1333    | DW01_add     | width=6    |               | add_8_root_add_13_root_add_299_I39_aco |
+| r1335    | DW01_add     | width=6    |               | add_0_root_add_13_root_add_299_I39_aco |
+===============================================================================
 
 
 Implementation Report
@@ -298,57 +52,7 @@ Implementation Report
 |                    |                  | Current            | Set            |
 | Cell               | Module           | Implementation     | Implementation |
 ===============================================================================
-| gte_x_1            | DW_cmp           | apparch (area)     |                |
-| eq_x_2             | DW_cmp           | apparch (area)     |                |
-| add_x_3            | DW01_add         | apparch (area)     |                |
-| add_x_4            | DW01_add         | apparch (area)     |                |
-| add_x_5            | DW01_add         | apparch (area)     |                |
-| add_x_6            | DW01_add         | apparch (area)     |                |
-| add_x_43           | DW01_inc         | apparch (area)     |                |
-| add_x_48           | DW01_inc         | apparch (area)     |                |
-| add_x_49           | DW01_inc         | apparch (area)     |                |
-| gt_x_432           | DW_cmp           | apparch (area)     |                |
-| sub_x_433          | DW01_sub         | apparch (area)     |                |
-| sub_x_434          | DW01_sub         | apparch (area)     |                |
-| gt_x_436           | DW_cmp           | apparch (area)     |                |
-| sub_x_437          | DW01_sub         | apparch (area)     |                |
-| sub_x_438          | DW01_sub         | apparch (area)     |                |
-| gt_x_441           | DW_cmp           | apparch (area)     |                |
-| sub_x_442          | DW01_sub         | apparch (area)     |                |
-| sub_x_443          | DW01_sub         | apparch (area)     |                |
-| gt_x_445           | DW_cmp           | apparch (area)     |                |
-| sub_x_446          | DW01_sub         | apparch (area)     |                |
-| sub_x_447          | DW01_sub         | apparch (area)     |                |
-| gt_x_450           | DW_cmp           | apparch (area)     |                |
-| sub_x_451          | DW01_sub         | apparch (area)     |                |
-| sub_x_452          | DW01_sub         | apparch (area)     |                |
-| gt_x_454           | DW_cmp           | apparch (area)     |                |
-| sub_x_455          | DW01_sub         | apparch (area)     |                |
-| sub_x_456          | DW01_sub         | apparch (area)     |                |
-| gt_x_459           | DW_cmp           | apparch (area)     |                |
-| sub_x_460          | DW01_sub         | apparch (area)     |                |
-| sub_x_461          | DW01_sub         | apparch (area)     |                |
-| gt_x_463           | DW_cmp           | apparch (area)     |                |
-| sub_x_464          | DW01_sub         | apparch (area)     |                |
-| sub_x_465          | DW01_sub         | apparch (area)     |                |
-| gt_x_468           | DW_cmp           | apparch (area)     |                |
-| sub_x_469          | DW01_sub         | apparch (area)     |                |
-| sub_x_470          | DW01_sub         | apparch (area)     |                |
-| gt_x_472           | DW_cmp           | apparch (area)     |                |
-| sub_x_473          | DW01_sub         | apparch (area)     |                |
-| sub_x_474          | DW01_sub         | apparch (area)     |                |
-| DP_OP_982J1_122_3642                  |                    |                |
-|                    | DP_OP_982J1_122_3642 | str (area)     |                |
-| DP_OP_983J1_123_5746                  |                    |                |
-|                    | DP_OP_983J1_123_5746 | str (area)     |                |
-| DP_OP_984J1_124_5746                  |                    |                |
-|                    | DP_OP_984J1_124_5746 | str (area)     |                |
-| DP_OP_985J1_125_5746                  |                    |                |
-|                    | DP_OP_985J1_125_5746 | str (area)     |                |
-| DP_OP_986J1_126_5746                  |                    |                |
-|                    | DP_OP_986J1_126_5746 | str (area)     |                |
-| DP_OP_987J1_127_5746                  |                    |                |
-|                    | DP_OP_987J1_127_5746 | str (area)     |                |
+| add_181            | DW01_inc         | rpl                |                |
 ===============================================================================
 
 1

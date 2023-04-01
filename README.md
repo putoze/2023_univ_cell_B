@@ -14,11 +14,20 @@
 <p align="middle">
   <img src="img/result.png" width="800" />
 </p>
+
+- Area
 <p align="middle">
   <img src="img/area.png" width="800" />
 </p>
+
+- Timing
 <p align="middle">
   <img src="img/timing.png" width="800" />
+</p>
+
+- Gate_level
+<p align="middle">
+  <img src="img/gate_level.png" width="800" />
 </p>
 
 ## dc

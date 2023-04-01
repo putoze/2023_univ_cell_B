@@ -7,57 +7,55 @@ Report : timing
         -max_paths 1
 Design : LASER
 Version: N-2017.09-SP2
-Date   : Sat Apr  1 14:49:21 2023
+Date   : Sat Apr  1 20:18:14 2023
 ****************************************
 
 Operating Conditions: slow   Library: slow
 Wire Load Model Mode: top
 
-  Startpoint: max_c2_dirty_reg[3]
+  Startpoint: tmp_dirty_reg[22]
               (rising edge-triggered flip-flop clocked by CLK)
   Endpoint: max_c1_dirty_reg[0]
             (rising edge-triggered flip-flop clocked by CLK)
   Path Group: CLK
   Path Type: max
 
-  Point                                                   Incr       Path
-  --------------------------------------------------------------------------
-  clock CLK (rise edge)                                   0.00       0.00
-  clock network delay (ideal)                             0.00       0.00
-  max_c2_dirty_reg[3]/CK (DFFQX1)                         0.00       0.00 r
-  max_c2_dirty_reg[3]/Q (DFFQX1)                          0.26       0.26 f
-  U3213/Y (OR2X1)                                         0.27       0.54 f
-  DP_OP_982J1_122_3642/U25/S (CMPR42X1)                   0.83       1.37 f
-  DP_OP_982J1_122_3642/U21/CO (CMPR42X1)                  0.74       2.11 f
-  DP_OP_982J1_122_3642/U17/S (CMPR42X1)                   0.30       2.40 f
-  U3552/CO (ADDFXL)                                       0.54       2.95 f
-  U3553/CO (ADDFXL)                                       0.38       3.32 f
-  U3289/CO (ADDFXL)                                       0.38       3.70 f
-  U3220/S (ADDHXL)                                        0.23       3.94 r
-  U3556/S (ADDHXL)                                        0.27       4.21 f
-  U3325/Y (OAI22XL)                                       0.26       4.47 r
-  U3292/Y (AOI222XL)                                      0.24       4.71 f
-  U3161/Y (OAI2BB1X1)                                     0.21       4.92 f
-  U3291/Y (OAI211XL)                                      0.12       5.04 r
-  U3326/Y (NOR2XL)                                        0.10       5.13 f
-  U3158/Y (INVXL)                                         0.22       5.36 r
-  U3578/Y (OR2X2)                                         0.21       5.57 r
-  U3157/Y (CLKINVX2)                                      0.39       5.96 f
-  U4644/Y (AOI222XL)                                      0.35       6.31 r
-  U3378/Y (INVXL)                                         0.06       6.37 f
-  max_c1_dirty_reg[0]/D (DFFQX1)                          0.00       6.37 f
-  data arrival time                                                  6.37
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  tmp_dirty_reg[22]/CK (EDFFTRX1)          0.00       0.00 r
+  tmp_dirty_reg[22]/QN (EDFFTRX1)          0.47       0.47 f
+  U1199/Y (NAND2X1)                        0.08       0.55 r
+  U1197/CO (ADDFXL)                        0.62       1.16 r
+  U1106/S (ADDFXL)                         0.68       1.84 f
+  U1076/S (ADDFXL)                         0.67       2.51 f
+  U1042/S (ADDFXL)                         0.67       3.18 f
+  U1046/CO (ADDFXL)                        0.64       3.82 f
+  U1044/CO (ADDFXL)                        0.38       4.20 f
+  U1045/CO (ADDFXL)                        0.38       4.57 f
+  U1040/S (ADDFXL)                         0.40       4.97 r
+  U1038/S (ADDHXL)                         0.24       5.21 r
+  U1133/Y (AO22X1)                         0.27       5.48 r
+  U1769/Y (NOR2BX1)                        0.08       5.55 f
+  U1770/Y (OA22X1)                         0.35       5.90 f
+  U1779/Y (OAI221XL)                       0.38       6.29 r
+  U1126/Y (NOR2BX1)                        0.33       6.61 r
+  U1127/Y (NAND2X2)                        0.37       6.99 f
+  U1143/Y (OAI222XL)                       0.24       7.22 r
+  max_c1_dirty_reg[0]/D (DFFX1)            0.00       7.22 r
+  data arrival time                                   7.22
 
-  clock CLK (rise edge)                                   8.00       8.00
-  clock network delay (ideal)                             0.00       8.00
-  max_c1_dirty_reg[0]/CK (DFFQX1)                         0.00       8.00 r
-  library setup time                                     -0.26       7.74
-  data required time                                                 7.74
-  --------------------------------------------------------------------------
-  data required time                                                 7.74
-  data arrival time                                                 -6.37
-  --------------------------------------------------------------------------
-  slack (MET)                                                        1.37
+  clock CLK (rise edge)                    8.00       8.00
+  clock network delay (ideal)              0.00       8.00
+  max_c1_dirty_reg[0]/CK (DFFX1)           0.00       8.00 r
+  library setup time                      -0.16       7.84
+  data required time                                  7.84
+  -----------------------------------------------------------
+  data required time                                  7.84
+  data arrival time                                  -7.22
+  -----------------------------------------------------------
+  slack (MET)                                         0.62
 
 
 1
