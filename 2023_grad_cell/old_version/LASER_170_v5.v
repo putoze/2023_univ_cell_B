@@ -13,11 +13,12 @@ output reg DONE);
 //   PARAMETER
 //================================================================
 
-localparam IDLE      = 4'b0000;
-localparam READ      = 4'b0001;
-localparam IS_INSIDE = 4'b0010;
-localparam FIND_BEST = 4'b0100;
-localparam OUT       = 4'b1000;
+localparam IDLE      = 3'd0;
+localparam READ      = 3'd1;
+localparam IS_INSIDE = 3'd2;
+//localparam STALL     = 3'd5;
+localparam FIND_BEST = 3'd3;
+localparam OUT       = 3'd4;
 
 localparam OBJ_NUM  = 40;
 localparam PARALLEL = 40;
@@ -30,7 +31,7 @@ genvar idx;
 //================================================================
 //   REG
 //================================================================
-reg [3:0] curr_state,next_state;
+reg [2:0] curr_state,next_state;
 reg [5:0] global_cnt;
 reg [2:0] iter_cnt;
 reg [7:0] obj_mem[0:39];//obj_x [3:0];obj_y [7:4]
@@ -49,10 +50,10 @@ reg [39:0] or_result;
 
 //state indicater
 wire state_IDLE      = curr_state == IDLE;
-wire state_READ      = curr_state[0];
-wire state_IS_INSIDE = curr_state[1];
-wire state_FIND_BEST = curr_state[2];
-wire state_OUT       = curr_state[3];
+wire state_READ      = curr_state == READ;
+wire state_IS_INSIDE = curr_state == IS_INSIDE;
+wire state_FIND_BEST = curr_state == FIND_BEST;
+wire state_OUT       = curr_state == OUT;
 
 //flag
 wire rd_done         = global_cnt == OBJ_NUM -1 && state_READ;
@@ -174,10 +175,19 @@ end
 
 always @(posedge CLK or posedge RST) begin 
 	if(RST) begin
-		{iter_cnt,row_ptr,col_ptr} <= 'd0;
+		{row_ptr,col_ptr} <= 'd0;
 	end 
 	else if(state_FIND_BEST) begin
-		{iter_cnt,row_ptr,col_ptr} <= {iter_cnt,row_ptr,col_ptr} + 'd1;
+		{row_ptr,col_ptr} <= {row_ptr,col_ptr} + 'd1;
+	end
+end
+
+always @(posedge CLK) begin 
+	if(RST) begin
+		iter_cnt <= 0;
+	end 
+	else if(one_iter_done) begin
+		iter_cnt <= iter_cnt + 'd1;
 	end
 	else if(state_IDLE) begin
 		iter_cnt <= 'd0;

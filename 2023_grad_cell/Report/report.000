@@ -2,8 +2,8 @@
 FTP account:                       B23119
 
 Level:                             A
-cycle:                             25599
-Synthesis area:                    35888
+cycle:                             17151
+Synthesis area:                    35922
 
 --- RTL category---
 HDL simulator :                    xrun/vcs/vsim/... 

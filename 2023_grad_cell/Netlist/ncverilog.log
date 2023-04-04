@@ -1,0 +1,500 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Apr 04, 2023 at 18:27:01 CST
+ncverilog
+	tb.sv
+	-define
+	GATE
+	-debug
+	-v
+	tsmc13_neg.v
+	-define
+	SDF
+Recompiling... reason: file './Netlist/LASER_SYN.sdf' is newer than expected.
+	expected: Sat Apr  1 20:18:15 2023
+	actual:   Tue Apr  4 18:26:57 2023
+file: tb.sv
+	module worklib.LASER:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+		Caching library 'tsmc13_neg' ....... Done
+	Elaborating the design hierarchy:
+  DFFRX1 iter_cnt_reg_0_ ( .D(n2331), .CK(CLK), .RN(n2321), .Q(iter_cnt[0]) );
+                       |
+ncelab: *W,CUVWSP (./Netlist/LASER_SYN.v,864|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 iter_cnt_reg_2_ ( .D(n2330), .CK(CLK), .RN(n2321), .Q(iter_cnt[2]) );
+                       |
+ncelab: *W,CUVWSP (./Netlist/LASER_SYN.v,865|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  TLATX1 next_state_reg_3_ ( .G(n2809), .D(N54), .Q(next_state[3]) );
+                         |
+ncelab: *W,CUVWSP (./Netlist/LASER_SYN.v,928|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,26772): QN
+
+  TLATX1 next_state_reg_1_ ( .G(n2809), .D(N52), .Q(next_state[1]) );
+                         |
+ncelab: *W,CUVWSP (./Netlist/LASER_SYN.v,929|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,26772): QN
+
+  TLATX1 next_state_reg_2_ ( .G(n2809), .D(N53), .Q(next_state[2]) );
+                         |
+ncelab: *W,CUVWSP (./Netlist/LASER_SYN.v,930|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,26772): QN
+
+  TLATX1 next_state_reg_0_ ( .G(n2809), .D(N51), .QN(n5457) );
+                         |
+ncelab: *W,CUVWSP (./Netlist/LASER_SYN.v,931|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,26772): Q
+
+  DFFTRX1 C2Y_reg_0_ ( .D(circal_loc_C2[4]), .RN(N91), .CK(CLK), .Q(C2Y[0]) );
+                   |
+ncelab: *W,CUVWSP (./Netlist/LASER_SYN.v,938|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 C2Y_reg_1_ ( .D(circal_loc_C2[5]), .RN(N91), .CK(CLK), .Q(C2Y[1]) );
+                   |
+ncelab: *W,CUVWSP (./Netlist/LASER_SYN.v,939|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 C2Y_reg_2_ ( .D(circal_loc_C2[6]), .RN(N91), .CK(CLK), .Q(C2Y[2]) );
+                   |
+ncelab: *W,CUVWSP (./Netlist/LASER_SYN.v,940|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 C2Y_reg_3_ ( .D(circal_loc_C2[7]), .RN(N91), .CK(CLK), .Q(C2Y[3]) );
+                   |
+ncelab: *W,CUVWSP (./Netlist/LASER_SYN.v,941|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 global_cnt_reg_4_ ( .D(n5455), .RN(n5456), .CK(CLK), .Q(
+                          |
+ncelab: *W,CUVWSP (./Netlist/LASER_SYN.v,942|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 global_cnt_reg_2_ ( .D(n5453), .RN(n5454), .CK(CLK), .Q(
+                          |
+ncelab: *W,CUVWSP (./Netlist/LASER_SYN.v,944|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 C2X_reg_3_ ( .D(circal_loc_C2[3]), .RN(N91), .CK(CLK), .Q(C2X[3]) );
+                   |
+ncelab: *W,CUVWSP (./Netlist/LASER_SYN.v,952|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 C2X_reg_2_ ( .D(circal_loc_C2[2]), .RN(N91), .CK(CLK), .Q(C2X[2]) );
+                   |
+ncelab: *W,CUVWSP (./Netlist/LASER_SYN.v,953|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 C2X_reg_1_ ( .D(circal_loc_C2[1]), .RN(N91), .CK(CLK), .Q(C2X[1]) );
+                   |
+ncelab: *W,CUVWSP (./Netlist/LASER_SYN.v,954|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 C2X_reg_0_ ( .D(circal_loc_C2[0]), .RN(N91), .CK(CLK), .Q(C2X[0]) );
+                   |
+ncelab: *W,CUVWSP (./Netlist/LASER_SYN.v,955|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 C1Y_reg_3_ ( .D(circal_loc_C1[7]), .RN(N91), .CK(CLK), .Q(C1Y[3]) );
+                   |
+ncelab: *W,CUVWSP (./Netlist/LASER_SYN.v,956|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 C1Y_reg_2_ ( .D(circal_loc_C1[6]), .RN(N91), .CK(CLK), .Q(C1Y[2]) );
+                   |
+ncelab: *W,CUVWSP (./Netlist/LASER_SYN.v,957|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 C1Y_reg_1_ ( .D(circal_loc_C1[5]), .RN(N91), .CK(CLK), .Q(C1Y[1]) );
+                   |
+ncelab: *W,CUVWSP (./Netlist/LASER_SYN.v,958|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 C1Y_reg_0_ ( .D(circal_loc_C1[4]), .RN(N91), .CK(CLK), .Q(C1Y[0]) );
+                   |
+ncelab: *W,CUVWSP (./Netlist/LASER_SYN.v,959|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 C1X_reg_3_ ( .D(circal_loc_C1[3]), .RN(N91), .CK(CLK), .Q(C1X[3]) );
+                   |
+ncelab: *W,CUVWSP (./Netlist/LASER_SYN.v,960|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 C1X_reg_2_ ( .D(circal_loc_C1[2]), .RN(N91), .CK(CLK), .Q(C1X[2]) );
+                   |
+ncelab: *W,CUVWSP (./Netlist/LASER_SYN.v,961|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 C1X_reg_1_ ( .D(circal_loc_C1[1]), .RN(N91), .CK(CLK), .Q(C1X[1]) );
+                   |
+ncelab: *W,CUVWSP (./Netlist/LASER_SYN.v,962|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 C1X_reg_0_ ( .D(circal_loc_C1[0]), .RN(N91), .CK(CLK), .Q(C1X[0]) );
+                   |
+ncelab: *W,CUVWSP (./Netlist/LASER_SYN.v,963|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Reading SDF file from location "./Netlist/LASER_SYN.sdf"
+	Compiled SDF file "LASER_SYN.sdf.X" older than source SDF file "./Netlist/LASER_SYN.sdf".
+	Recompiling.
+	Writing compiled SDF file to "LASER_SYN.sdf.X".
+	Annotating SDF timing data:
+		Compiled SDF file:     LASER_SYN.sdf.X
+		Log file:              
+		Backannotation scope:  testfixture.u_LASER
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.u_LASER.U5956 of module XNOR2X1 <./Netlist/LASER_SYN.sdf, line 14647>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.u_LASER.U5956 of module XNOR2X1 <./Netlist/LASER_SYN.sdf, line 14648>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.u_LASER.U5956 of module XNOR2X1 <./Netlist/LASER_SYN.sdf, line 14651>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.u_LASER.U5956 of module XNOR2X1 <./Netlist/LASER_SYN.sdf, line 14652>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.u_LASER.U5953 of module XNOR2X1 <./Netlist/LASER_SYN.sdf, line 14686>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.u_LASER.U5953 of module XNOR2X1 <./Netlist/LASER_SYN.sdf, line 14687>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.u_LASER.U5953 of module XNOR2X1 <./Netlist/LASER_SYN.sdf, line 14690>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.u_LASER.U5953 of module XNOR2X1 <./Netlist/LASER_SYN.sdf, line 14691>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_LASER.U3809 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 38065>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_LASER.U3809 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 38066>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.u_LASER.U3809 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 38071>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.u_LASER.U3809 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 38072>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance testfixture.u_LASER.U3809 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 38075>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance testfixture.u_LASER.U3809 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 38076>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_LASER.intadd_0_U3 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 44481>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_LASER.intadd_0_U3 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 44482>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.u_LASER.intadd_0_U3 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 44487>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.u_LASER.intadd_0_U3 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 44488>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance testfixture.u_LASER.intadd_0_U3 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 44491>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance testfixture.u_LASER.intadd_0_U3 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 44492>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_LASER.intadd_0_U6 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 44512>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_LASER.intadd_0_U6 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 44513>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.u_LASER.intadd_0_U6 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 44518>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.u_LASER.intadd_0_U6 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 44519>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance testfixture.u_LASER.intadd_0_U6 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 44522>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance testfixture.u_LASER.intadd_0_U6 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 44523>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_LASER.intadd_0_U2 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 44543>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_LASER.intadd_0_U2 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 44544>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.u_LASER.intadd_0_U2 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 44549>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.u_LASER.intadd_0_U2 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 44550>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance testfixture.u_LASER.intadd_0_U2 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 44553>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance testfixture.u_LASER.intadd_0_U2 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 44554>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_LASER.intadd_0_U4 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 44574>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_LASER.intadd_0_U4 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 44575>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.u_LASER.intadd_0_U4 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 44580>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.u_LASER.intadd_0_U4 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 44581>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance testfixture.u_LASER.intadd_0_U4 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 44584>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance testfixture.u_LASER.intadd_0_U4 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 44585>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_LASER.intadd_0_U5 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 45089>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_LASER.intadd_0_U5 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 45090>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.u_LASER.intadd_0_U5 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 45095>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.u_LASER.intadd_0_U5 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 45096>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance testfixture.u_LASER.intadd_0_U5 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 45099>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance testfixture.u_LASER.intadd_0_U5 of module ADDFXL <./Netlist/LASER_SYN.sdf, line 45100>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U15 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45204>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U15 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45205>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U15 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45208>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U15 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45209>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U15 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45212>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U15 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45213>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U15 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45216>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U15 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45217>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U15 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45220>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U15 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45221>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U15 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45231>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U15 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45232>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U15 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45235>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U15 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45236>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U15 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45239>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U15 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45240>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U17 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45253>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U17 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45254>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U17 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45257>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U17 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45258>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U17 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45261>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U17 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45262>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U17 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45265>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U17 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45266>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U17 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45269>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U17 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45270>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U17 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45280>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U17 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45281>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U17 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45284>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U17 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45285>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U17 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45288>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U17 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45289>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U18 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45302>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U18 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45303>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U18 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45306>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U18 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45307>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U18 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45310>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U18 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45311>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U18 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45314>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U18 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45315>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U18 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45318>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U18 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45319>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U18 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45329>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U18 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45330>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U18 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45333>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U18 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45334>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U18 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45337>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U18 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45338>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U19 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45351>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U19 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45352>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U19 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45355>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U19 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45356>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U19 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45359>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U19 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45360>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U19 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45363>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U19 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45364>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U19 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45367>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U19 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45368>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U19 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45378>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U19 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45379>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U19 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45382>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U19 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45383>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U19 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45386>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U19 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45387>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U20 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45400>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U20 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45401>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U20 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45404>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U20 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45405>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U20 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45408>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U20 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45409>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U20 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45412>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U20 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45413>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U20 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45416>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U20 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45417>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U20 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45427>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U20 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45428>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U20 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45431>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U20 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45432>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U20 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45435>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U20 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45436>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U21 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45449>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U21 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45450>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U21 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45453>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U21 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45454>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U21 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45457>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U21 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45458>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U21 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45461>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U21 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45462>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U21 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45465>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U21 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45466>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U21 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45476>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U21 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45477>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U21 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45480>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U21 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45481>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U21 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45484>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U21 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45485>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U22 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45498>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U22 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45499>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U22 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45502>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U22 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45503>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U22 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45506>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U22 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45507>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U22 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45510>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U22 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45511>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U22 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45514>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U22 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45515>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U22 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45525>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U22 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45526>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U22 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45529>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U22 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45530>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U22 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45533>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U22 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45534>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U23 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45547>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U23 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45548>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U23 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45551>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U23 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45552>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U23 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45555>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U23 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45556>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U23 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45559>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U23 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45560>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U23 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45563>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U23 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45564>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U23 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45574>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U23 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45575>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U23 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45578>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U23 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45579>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U23 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45582>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U23 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45583>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U24 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45596>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U24 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45597>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U24 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45600>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U24 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45601>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U24 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45604>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U24 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45605>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U24 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45608>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U24 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45609>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U24 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45612>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U24 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45613>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U24 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45623>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U24 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45624>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U24 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45627>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U24 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45628>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U24 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45631>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U24 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45632>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U25 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45645>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U25 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45646>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U25 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45649>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U25 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45650>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U25 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45653>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U25 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45654>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U25 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45657>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U25 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45658>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U25 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45661>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U25 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45662>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U25 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45672>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U25 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45673>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U25 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45676>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U25 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45677>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U25 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45680>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U25 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45681>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U26 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45694>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U26 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45695>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U26 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45698>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U26 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45699>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U26 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45702>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U26 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45703>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U26 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45706>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U26 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45707>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U26 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45710>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U26 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45711>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U26 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45721>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U26 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45722>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U26 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45725>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U26 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45726>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U26 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45729>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U26 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45730>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U27 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45743>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U27 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45744>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U27 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45747>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U27 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45748>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U27 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45751>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U27 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45752>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U27 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45755>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U27 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45756>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U27 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45759>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U27 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45760>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U27 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45770>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U27 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45771>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U27 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45774>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U27 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45775>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U27 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45778>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U27 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45779>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U28 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45792>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U28 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45793>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U28 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45796>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U28 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45797>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U28 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45800>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U28 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45801>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U28 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45804>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U28 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45805>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U28 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45808>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U28 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45809>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U28 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45819>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U28 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45820>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U28 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45823>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U28 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45824>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U28 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45827>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U28 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45828>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U29 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45841>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U29 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45842>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U29 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45845>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U29 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45846>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U29 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45849>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U29 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45850>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U29 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45853>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge D) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U29 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45854>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U29 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45857>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge ICI) S) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U29 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45858>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U29 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45868>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U29 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45869>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U29 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45872>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U29 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45873>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U29 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45876>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge C) CO) of instance testfixture.u_LASER.DP_OP_690J1_122_3642_U29 of module CMPR42X1 <./Netlist/LASER_SYN.sdf, line 45877>.
+	Annotation completed with 0 Errors and 268 Warnings
+	SDF statistics: No. of Pathdelays = 9915  Annotated = 100.00% -- No. of Tchecks = 2110  Annotated = 100.00% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	        9915	        9915	      100.00
+		      $width	        1031	        1031	      100.00
+		  $setuphold	        1079	        1079	      100.00
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                     Instances  Unique
+		Modules:                  3711      55
+		UDPs:                      512       3
+		Primitives:               7642       8
+		Timing outputs:           3780      22
+		Registers:                 557      52
+		Scalar wires:             6863       -
+		Expanded wires:              8       2
+		Vectored wires:              2       -
+		Always blocks:               3       3
+		Initial blocks:             13      13
+		Cont. assignments:           2       2
+		Pseudo assignments:          4       4
+		Timing checks:            3189    1055
+		Interconnect:            10065       -
+		Delayed tcheck signals:   1057     517
+		Simulation timescale:      1ps
+	Writing initial simulation snapshot: worklib.testfixture:sv
+Loading snapshot worklib.testfixture:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_P-2019.06, Linux, 05/26/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file './FSDB/LASER.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+*******************************
+** Simulation Start          **
+*******************************
+== PATTERN ./img1.pattern
+---- Used Cycle:       2048
+---- Get Return: C1(11,12),C2( 4,10)
+---- cover =  30, optimum =  30
+== PATTERN ./img2.pattern
+---- Used Cycle:       2560
+---- Get Return: C1(11, 6),C2( 5,11)
+---- cover =  28, optimum =  28
+== PATTERN ./img3.pattern
+---- Used Cycle:       3072
+---- Get Return: C1( 5,10),C2(10, 5)
+---- cover =  29, optimum =  29
+== PATTERN ./img4.pattern
+---- Used Cycle:       3072
+---- Get Return: C1(10, 5),C2( 4, 9)
+---- cover =  30, optimum =  30
+== PATTERN ./img5.pattern
+---- Used Cycle:       3072
+---- Get Return: C1( 8,12),C2( 2,10)
+---- cover =  23, optimum =  23
+== PATTERN ./img6.pattern
+---- Used Cycle:       3072
+---- Get Return: C1( 9, 9),C2(13, 2)
+---- cover =  30, optimum =  30
+
+*******************************
+**   Finish Simulation       **
+**   RUN CYCLE =      17151  **
+**   Cover total = 170/170   **
+*******************************
+Simulation complete via $finish(1) at time 137204 NS + 0
+./tb.sv:268                  $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Apr 04, 2023 at 18:27:08 CST  (total: 00:00:07)
