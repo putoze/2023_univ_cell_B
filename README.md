@@ -30,6 +30,11 @@
   <img src="img/gate_level.png" width="800" />
 </p>
 
+- PPA
+<p align="middle">
+  <img src="img/PPA.png" width="400" />
+</p>
+
 ## dc
 
 - dcprocheck 
